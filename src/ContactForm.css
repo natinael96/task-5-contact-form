@@ -90,3 +90,6 @@
     margin: 5px 0;
   }
   
+  .data-display p .message {
+    font-family: sans-serif;
+  }
