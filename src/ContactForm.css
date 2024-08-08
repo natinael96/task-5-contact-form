@@ -70,26 +70,37 @@
     background-color: #004d40;
   }
   
-
-.data-display {
-    margin-top: 20px;
-    padding: 30px;
-    background: #f1f8f6;
-    border-radius: 10px;
+  .data-display {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  .data-display h2 {
-    color: #00796b;
-    margin-bottom: 10px;
-  }
-  
-  .data-display p {
-    margin: 5px 0;
-  }
-  
-  .data-display p .message {
-    font-family: sans-serif;
-  }
+    margin-top: 20px;
+}
+
+.data-display h2 {
+    margin-bottom: 16px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.data-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.data-item {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.data-item:hover {
+    background-color: #f1f1f1;
+}
+
+.data-item strong {
+    color: #555;
+}

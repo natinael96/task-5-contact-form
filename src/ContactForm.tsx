@@ -1,14 +1,15 @@
-import React from 'react';
-import { SubmitHandler } from 'react-hook-form';
+import React, { useState } from 'react';
+import { set, SubmitHandler } from 'react-hook-form';
 import InputForm from './InputForm';
 import './ContactForm.css';
+import DisplayData from './DisplayData';
 
 interface FormValues {
     [key: string]: any;
 }
 
 const ContactForm: React.FC = () => {
-
+    const [data, setData] = useState<FormValues >();
     const fields = [
         { name: 'name', label: 'Name', type: 'text' },
         { name: 'email', label: 'Email', type: 'email', value: '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$' },
@@ -16,11 +17,12 @@ const ContactForm: React.FC = () => {
     ];
 
     const onSubmit: SubmitHandler<FormValues> = (data) => {
-        console.log(data);
+        setData(data);
     };
 
     return (<div className='contact-form-container'>
         <InputForm fields={fields} onSubmit={onSubmit} />;
+        <DisplayData data={data} />
     </div>) 
 };
 
