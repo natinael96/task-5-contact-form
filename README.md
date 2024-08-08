@@ -62,4 +62,3 @@ import ContactForm from './ContactForm';
 ### Styling
 
 Custom styles for the contact form are provided in `ContactForm.css`. You can modify these styles to fit the design of your application.
-
