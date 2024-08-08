@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { set, SubmitHandler } from 'react-hook-form';
+import { SubmitHandler } from 'react-hook-form';
 import InputForm from './InputForm';
 import './ContactForm.css';
 import DisplayData from './DisplayData';

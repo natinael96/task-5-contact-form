@@ -15,7 +15,8 @@ This is a React component for a contact form built using TypeScript and the `rea
 - **Data Display**:
   - Shows the submitted data (name, email, and message) once the form is successfully submitted and validated.
 
-    ![alt text](<ss/Screenshot 2024-08-08 140027.png>) ![alt text](<ss/Screenshot 2024-08-08 140156.png>)
+   ![alt text](ss/image.png)
+   ![alt text](ss/image-1.png)
 
 ## Dependencies
 
