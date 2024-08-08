@@ -1,13 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ContactForm from './ContactForm'; 
+import './App.css'; 
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      
-    </>
+    <div className="app-container">
+      <h1>Contact Form</h1>
+      <ContactForm />
+    </div>
   );
-}
+};
 
 export default App;
