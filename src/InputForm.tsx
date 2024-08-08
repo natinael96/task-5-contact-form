@@ -32,7 +32,7 @@ const InputForm: React.FC<InputFormProps> = ({ fields, onSubmit }) => {
                             id={field.name}
                             {...register(field.name, {
                                 required: `${field.label || field.name} is required`,
-                                minLength: { value: 10, message: `${field.label || field.name} must be at least 10 characters` },
+                                minLength: { value: (field.val || 0), message: `${field.label || field.name} must be at least ${field.val || 0} characters` },
                                 pattern: field.value ? {
                                     value: new RegExp(field.value),
                                     message: `Invalid ${field.label || field.name}`
