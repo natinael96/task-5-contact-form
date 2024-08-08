@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+# Contact Form Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React component for a contact form built using TypeScript and the `react-hook-form` library. The component allows users to submit their name, email address, and a message, with validation for each field. The form displays error messages if the validation criteria are not met and shows the submitted data once the form is successfully submitted.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Form Validation**:
+  - **Name**: Required field with a maximum length of 20 characters.
+  - **Email**: Required field with validation for correct email format.
+  - **Message**: Required field with a minimum length of 10 characters.
 
-### `npm start`
+- **Error Handling**:
+  - Displays relevant error messages for each field if the input does not meet the specified validation rules.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Data Display**:
+  - Shows the submitted data (name, email, and message) once the form is successfully submitted and validated.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    ![alt text](<ss/Screenshot 2024-08-08 140027.png>) ![alt text](<ss/Screenshot 2024-08-08 140156.png>)
 
-### `npm test`
+## Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `react`
+- `react-hook-form`
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone <repository-url>
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory:
 
-### `npm run eject`
+   ```bash
+   cd <project-directory>
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Install the dependencies:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. Start the development server:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+### Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Import the `ContactForm` component into your React application and include it in your component tree:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```tsx
+import ContactForm from './ContactForm';
+
+// In your component
+<ContactForm />
+```
+
+### Styling
+
+Custom styles for the contact form are provided in `ContactForm.css`. You can modify these styles to fit the design of your application.
+
